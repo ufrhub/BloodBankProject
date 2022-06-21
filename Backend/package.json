@@ -1,0 +1,31 @@
+{
+  "name": "blood_bank_backend",
+  "version": "1.0.0",
+  "description": "This is for BloodBank Backend Server ",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Server.js",
+    "dev": "nodemon Server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cloudinary": "^1.28.1",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-fileupload": "^1.3.1",
+    "formidable": "^1.2.2",
+    "googleapis": "^95.0.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.0",
+    "node-fetch": "^3.2.0",
+    "nodemailer": "^6.7.2",
+    "uuid": "^8.3.2"
+  }
+}
