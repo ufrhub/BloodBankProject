@@ -1,0 +1,34 @@
+.NotificationPage {
+  margin: 50px 20px 10px 20px;
+}
+
+.NotificationPage .h2 {
+  color: #c40000;
+  max-width: 1150px;
+  margin: 0 auto 30px auto;
+  padding: 10px 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(233, 222, 222);
+}
+
+.NotificationPage .options {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.options div {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.options span{
+    color: red;
+}
+
+.options .fa-check {
+  padding: 5px;
+  font-size: 1.1rem;
+  border: 1px solid rgb(189, 189, 189);
+  margin-right: 10px;
+}

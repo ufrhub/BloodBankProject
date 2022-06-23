@@ -1,0 +1,108 @@
+.DonationCamp {
+    margin: 50px 20px;
+}
+
+.DonationCamp_heading {
+    font-size: 1.6rem;
+    max-width: 1200px;
+    margin: 30px auto;
+    color: rgb(179, 4, 4);
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+/* TOP SECTION */
+.DonationCamp_top {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.DonationCamp_comment {
+    font-size: 13px;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    width: max-content;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.DonationCamp_form {
+    display: flex;
+}
+
+.DonationCamp_form_column {
+    width: 20%;
+}
+
+.DonationCamp_form_column_input {
+    width: 40%;
+}
+
+.DonationCamp_form_column_input>input {
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(175, 175, 175);
+}
+
+.DonationCamp_form_column>button {
+    font-size: 15px;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(255, 0, 0, 0.821);
+    border: none;
+}
+
+/* BOTTOM SeECTION */
+.DonationCamp_bottom {
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.DonationCamp_bottom_table_options {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+}
+
+.DonationCamp_bottom_entry_limit {
+    margin: auto;
+    text-align: left;
+    width: 50%;
+}
+
+.DonationCamp_bottom_search_box {
+    margin: auto;
+    text-align: right;
+    width: 50%;
+}
+
+/* TABLE */
+.DonationCamp_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.DonationCamp_table_head th {
+    background: rgb(189, 0, 0);
+}
+
+.DonationCamp_table_body td,
+.DonationCamp_table_head th {
+    padding: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .DonationCamp_form {
+        display: block;
+    }
+}

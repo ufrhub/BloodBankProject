@@ -1,0 +1,437 @@
+/* ---------- Other User's Profile ---------- */
+
+/* ---------- Top Section ---------- */
+.UserProfile_TopSection {
+  height: auto;
+  padding-bottom: 1%;
+  width: 100%;
+  background: #1c1e21eb;
+  -webkit-box-shadow: inset 0px -5px 50px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px -5px 50px 5px rgba(0, 0, 0, 0.723);
+}
+
+.UserProfile_Image_body {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  animation: TopSectionAnimation 2s ease-in-out;
+}
+
+.UserProfile_Background_Image {
+  width: 100%;
+  max-height: 468px;
+  aspect-ratio: 21/7;
+  border: 5px solid rgba(245, 245, 245, 0.752);
+  border-top: none;
+  border-radius: 10px;
+}
+
+.Background_Edit {
+  position: absolute;
+  font-size: 2vw;
+  color: #fff;
+  background: #1c1e21;
+  top: 60%;
+  right: 5%;
+  padding: 10px 5px;
+  opacity: 0.5;
+}
+
+.Background_Edit input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: red;
+  opacity: 0;
+}
+
+.UserProfile_Profile_Image {
+  width: 100%;
+  text-align: center;
+  margin-top: -8.5%;
+}
+
+.UserProfile_Profile_Image>img {
+  width: 15%;
+  aspect-ratio: 4/4;
+  border: 5px solid rgba(245, 245, 245, 0.752);
+  border-radius: 50%;
+}
+
+.Avatar_Edit {
+  position: absolute;
+  font-size: 3vw;
+  color: #fff;
+  top: 75%;
+  left: 54%;
+  padding: 10px 5px;
+  opacity: 0.5;
+}
+
+.Background_Edit:hover,
+.Avatar_Edit:hover {
+  opacity: 1;
+}
+
+.Avatar_Edit input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.UserProfile_User_Name {
+  font-size: 4vw;
+  font-weight: 600;
+  color: rgba(245, 245, 245, 0.852);
+  text-align: center;
+  margin-top: 5px;
+}
+
+.UserProfile_TopSection_btns {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.UserProfile_TopSection_btn {
+  font-size: 21px;
+  padding: 15px 25px;
+  text-align: center;
+  color: rgba(245, 245, 245, 0.752);
+  background: #1c1e21;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ---------- Popup Image ---------- */
+.Popup_Image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.Popup_Image span {
+  position: absolute;
+  top: 3%;
+  right: 10px;
+  font-size: 60px;
+  font-weight: 900;
+  color: rgba(255, 0, 0, 0.942);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.Popup_Image img {
+  position: absolute;
+  max-height: 85vh;
+  max-width: 95%;
+  min-width: 40vw;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* ---------- Bottom Section ---------- */
+
+/* ----- About ----- */
+.UserProfile_BottomSection {
+  height: auto;
+  padding-bottom: 1%;
+  width: 100%;
+  background: #1c1e21;
+  padding: 40px 0;
+}
+
+.UserProfile_BottomSection_Box {
+  position: relative;
+  font-size: 25px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #37383aee;
+  border: 1px solid #aaaaaaeb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.UserProfile_BottomSection_Box.About {
+  width: 50%;
+}
+
+.UserProfile_BottomSection_Box.BloodBank {
+  width: 70%;
+}
+
+.UserProfile_Box_heading {
+  width: 100%;
+  color: rgba(194, 194, 194, 0.518);
+  padding: 10px;
+}
+
+.edit_user_icon {
+  padding: 10px;
+  font-size: 33px;
+  color: rgba(194, 194, 194, 0.518);
+  cursor: pointer;
+}
+
+.edit_user_icon:hover {
+  color: rgb(194, 194, 194);
+}
+
+.UserProfile_Box_body {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px 10px;
+}
+
+.UserProfile_Box_row {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgba(245, 245, 245, 0.752);
+}
+
+.UserProfile_Box_col1 {
+  width: 37%;
+  margin-bottom: 10px;
+}
+
+.UserProfile_Box_col2 {
+  width: 63%;
+}
+
+.UserProfile_Box_col2>input,
+.UserProfile_Box_col2>select {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+/* ----- BloodBank ----- */
+.UserProfile_Box_body_BloodBank {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 10px 10px;
+}
+
+.UserProfile_Box_row_BloodBank {
+  position: relative;
+  margin-bottom: 10px;
+  min-height: 30px;
+  color: rgba(245, 245, 245, 0.752);
+}
+
+.UserProfile_Box_col1_BloodBank {
+  position: absolute;
+  left: 0;
+}
+
+.UserProfile_Box_col2_BloodBank {
+  position: absolute;
+  right: 0;
+}
+
+/* ----- Donation Request ----- */
+.UserProfile_DonationRequest_card {
+  max-width: 90%;
+  height: fit-content;
+  background: whitesmoke;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+
+.UserProfile_DonationRequest_card_top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.UserProfile_DonationRequest_card_top>img {
+  width: 200px;
+  height: 200px;
+}
+
+.UserProfile_DonationRequest_card_headings {
+  font-size: 23px;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.UserProfile_DonationRequest_card_bottom {
+  padding: 10px 20px;
+}
+
+.UserProfile_DonationRequest_Input_Img>input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  line-height: 6;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.653);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.UserProfile_DonationRequest_Input_Img>input:hover {
+  opacity: 1;
+}
+
+/* ----- Bottom Section Edit Button ----- */
+.UserProfile_BottomSection_Edit_Btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.UserProfile_BottomSection_Edit_Btn>button {
+  font-size: 21px;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.UserProfile_BottomSection_Edit_Btn>.Edit_btn {
+  background: green;
+  color: white;
+}
+
+.UserProfile_BottomSection_Edit_Btn>.Delete_btn {
+  background: red;
+  color: white;
+}
+
+/* ----- Placeholder Color ----- */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  /* Firefox */
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}
+
+/* ----- Animation ------ */
+@keyframes TopSectionAnimation {
+  0% {
+    top: -50vh;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ----- Media Query ----- */
+@media (max-width:1200px) {
+
+  .UserProfile_BottomSection_Box.About,
+  .UserProfile_BottomSection_Box.BloodBank {
+    width: 75%;
+  }
+
+  .UserProfile_DonationRequest_card_headings {
+    max-width: 70%;
+  }
+}
+
+@media (max-width:900px) {
+  .Background_Edit {
+    top: 55%;
+    right: 2%;
+  }
+
+  .Avatar_Edit {
+    top: 74.5%;
+    left: 53.7%;
+  }
+
+  .UserProfile_BottomSection {
+    margin-bottom: -20px;
+  }
+
+  .UserProfile_TopSection_btn {
+    padding: 15px;
+  }
+
+  .Popup_Image span {
+    top: 4%;
+  }
+
+  .Popup_Image img {
+    max-height: 85%;
+    width: 95%;
+  }
+
+  .UserProfile_BottomSection_Box.About,
+  .UserProfile_BottomSection_Box.BloodBank {
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .UserProfile_DonationRequest_card_headings {
+    max-width: 60%;
+  }
+}
+
+@media (max-width:750px) {
+  .UserProfile_DonationRequest_card_headings {
+    max-width: 60%;
+  }
+}
+
+@media (max-width:700px) {
+  .UserProfile_DonationRequest_card_headings {
+    font-size: 17px;
+  }
+}
+
+@media (max-width:600px) {
+  .Background_Edit {
+    top: 53%;
+    right: 2%;
+  }
+
+  .UserProfile_DonationRequest_card_headings {
+    max-width: 50%;
+  }
+}

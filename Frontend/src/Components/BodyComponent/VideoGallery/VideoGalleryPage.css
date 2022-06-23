@@ -1,0 +1,60 @@
+.VideoGalleryPage {
+  margin: 50px 20px;
+}
+
+.VideoGalleryPage .heading {
+  font-size: 1.8rem;
+  max-width: 1100px;
+  text-align: left;
+  margin: 40px auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  color: rgb(158, 14, 14);
+}
+
+.VideoGalleryPage .box {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.box .video {
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.video iframe {
+  margin-right: 7%;
+  width: 300px;
+  height: 250px;
+}
+
+.video .p {
+  padding-top: 50px;
+  font-size: 1.3rem;
+  max-width: 630px;
+}
+
+.box .h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: brown;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 800px) {
+  .box .video {
+    display: block;
+  }
+
+  .video iframe {
+    height: 150px;
+  }
+
+  .video .p {
+    padding-top: 20px;
+  }
+}

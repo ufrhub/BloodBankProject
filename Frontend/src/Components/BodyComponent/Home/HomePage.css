@@ -1,0 +1,452 @@
+.HomePage {
+  margin: 0;
+}
+
+/********************* Black Box *********************/
+.HomePage .black-box {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background: rgb(51, 51, 51);
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.8),
+    0 10px 20px -5px rgba(0, 0, 0, 0.8);
+  margin-top: -10px;
+}
+
+.black-box .box-container {
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 50px;
+}
+
+.box-container .box-body {
+  position: relative;
+  height: 190px;
+  width: 225px;
+  margin: 15px auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.box-body .box-cover {
+  position: absolute;
+  height: 190px;
+  width: 225px;
+  top: 0;
+  transform: translate(0, -200px);
+  background: rgb(143, 29, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+.box-cover div {
+  font-size: 1.1rem;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  text-align: center;
+}
+
+.box-body .box {
+  height: 170px;
+  width: 190px;
+  margin: 10px auto;
+}
+
+.box-body:hover.box-body .box-cover {
+  transform: translate(0);
+}
+
+.box .box-icon {
+  font-size: 3rem;
+  color: white;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.box .box-p {
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+
+/********************* White Box *********************/
+.white-box {
+  box-shadow: 0 0 20px 0 rgb(167, 164, 164) inset;
+  margin-bottom: 10px;
+  padding-bottom: 0.1px;
+}
+
+.white-box .heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: red;
+  margin-bottom: 60px;
+}
+
+.white-box .box-container {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+.right-section {
+  max-width: 50%;
+  margin-left: 10px;
+}
+
+.image-body {
+  max-width: 800px;
+  min-width: 300px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.left-section-p {
+  max-width: 90%;
+  padding: 0 10px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 40px;
+  color: rgb(44, 42, 42);
+}
+
+/******* White Box Left Section Button *******/
+.left-section-btn {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.left-section-btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(197, 0, 0);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.left-section-btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #006cbe;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+
+.left-section-btn a:hover:before {
+  transform: translateX(0);
+  z-index: -1;
+}
+
+
+/* White Box Right Section Table */
+.t-heading {
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 8px 10px;
+  color: white;
+  background: red;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  max-width: 250px;
+  min-width: 150px;
+  width: 250px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.b-head {
+  color: rgb(119, 9, 9);
+  font-weight: 700;
+}
+
+/********************* Information Box *********************/
+.information-box {
+  max-width: 1100px;
+  margin: 10px auto;
+  background: rgb(219, 219, 219);
+  border: 1px solid rgb(179, 179, 179);
+}
+
+.information-box .top-section {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.information-box .box-top-heading {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: red;
+}
+
+.paragraph .p {
+  margin: 0 20px 20px 20px;
+}
+
+.information-box .bottom-section {
+  margin: 80px 20px 50px 20px;
+}
+
+.bottom-section .buttons {
+  display: inline-block;
+  color: red;
+  font-size: 1.2rem;
+}
+
+.buttons .btn {
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+#whole-blood,
+#plasma,
+#platelet {
+  border-top: 1px solid rgb(175, 175, 175);
+  margin-top: -1px;
+  margin-bottom: 50px;
+  display: none;
+}
+
+#whole-blood {
+  display: flex;
+}
+
+.p-col {
+  margin: 5px auto;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.p-col .para {
+  max-width: 350px;
+  line-height: 2;
+  margin-bottom: 15px;
+  color: rgb(78, 78, 78);
+}
+
+.para .question {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.column-center {
+  height: fit-content;
+  border-left: 1px solid rgb(175, 175, 175);
+  border-right: 1px solid rgb(175, 175, 175);
+}
+
+#btn-one:checked ~ #whole-blood {
+  display: flex;
+}
+
+#btn-two:checked ~ #plasma {
+  display: flex;
+}
+
+#btn-three:checked ~ #platelet {
+  display: flex;
+}
+
+#btn-three:checked ~ #whole-blood {
+  display: none;
+}
+
+#btn-two:checked ~ #whole-blood {
+  display: none;
+}
+
+.label-one {
+  background: white;
+  border: 1px solid rgb(175, 175, 175);
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.check-two:checked ~ .label-one {
+  background: none;
+  border: none;
+}
+
+.check-three:checked ~ .label-one {
+  background: none;
+  border: none;
+}
+
+.check-two:checked ~ .label-two {
+  background: white;
+  border: 1px solid rgb(175, 175, 175);
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.check-three:checked ~ .label-three {
+  background: white;
+  border: 1px solid rgb(175, 175, 175);
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.radio {
+  display: none;
+}
+
+/******* Information Box Bottom Section Button *******/
+.bottom-section-btn {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+
+.bottom-section-btn a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(197, 0, 0);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.bottom-section-btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #006cbe;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+
+.bottom-section-btn a:hover:before {
+  transform: translateX(0);
+  z-index: -1;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 1200px) {
+  .table th,
+  .table td {
+    max-width: 200px;
+    min-width: auto;
+    width: 200px;
+    padding: 8px 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .box-container .box-body {
+    width: 320px;
+  }
+
+  .box-body .box-cover {
+    width: 320px;
+  }
+
+  .box-body .box {
+    width: 300px;
+  }
+
+  .table th,
+  .table td {
+    max-width: 150px;
+    min-width: auto;
+    width: 150px;
+    padding: 8px 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .white-box .box-container {
+    display: block;
+  }
+
+  .left-section {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .right-section {
+    max-width: 100%;
+  }
+
+  .information-box .bottom-section {
+    margin: 80px 5px 50px 5px;
+  }
+
+  #whole-blood {
+    display: block;
+  }
+
+  .column-center {
+    border: none;
+  }
+
+  #btn-one:checked ~ #whole-blood {
+    display: block;
+  }
+
+  #btn-two:checked ~ #plasma {
+    display: block;
+  }
+
+  #btn-three:checked ~ #platelet {
+    display: block;
+  }
+
+  .p-col .para {
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

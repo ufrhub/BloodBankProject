@@ -1,0 +1,107 @@
+.AddYourBloodBankPage {
+  margin: 30px 15px;
+}
+
+.AddYourBloodBankPage .addBloodBankHeading {
+  max-width: 1150px;
+  margin: 20px auto;
+  color: rgb(192, 4, 4);
+  font-size: 1.7rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.AddYourBloodBankPage .addBloodBankSwitch {
+  max-width: 1150px;
+  margin: 40px auto;
+  font-size: 1.2rem;
+  padding: 9px 0;
+}
+
+.addBloodBankSwitch > input {
+  display: none;
+}
+
+.addBloodBankSwitch > label {
+  padding: 10px;
+  color: red;
+}
+
+.addBloodBankSwitch > label div {
+  display: inline-block;
+}
+
+.addBloodBankSwitch #label-one {
+  background: white;
+  border: 1px solid rgb(226, 226, 226);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: black;
+  border-bottom: none;
+}
+
+.addBloodBankSwitch #DonationInformation:checked ~ #label-one,
+.addBloodBankSwitch #Miscellaneous:checked ~ #label-one,
+.addBloodBankSwitch #UserType:checked ~ #label-one {
+  border: none;
+  color: red;
+  background: none;
+}
+
+.addBloodBankSwitch #BloodBankInformation:checked ~ #label-one,
+.addBloodBankSwitch #DonationInformation:checked ~ #label-two,
+.addBloodBankSwitch #Miscellaneous:checked ~ #label-three,
+.addBloodBankSwitch #UserType:checked ~ #label-four {
+  background: white;
+  border: 1px solid rgb(226, 226, 226);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: black;
+  border-bottom: none;
+}
+
+.addBloodBankSwitch #BloodBankInformationPage {
+  display: block;
+}
+
+.addBloodBankSwitch #BloodBankInformation:checked ~ #BloodBankInformationPage,
+.addBloodBankSwitch #DonationInformation:checked ~ #DonationInformationPage,
+.addBloodBankSwitch #Miscellaneous:checked ~ #MiscellaneousPage,
+.addBloodBankSwitch #UserType:checked ~ #UserTypePage {
+  display: block;
+}
+
+.addBloodBankSwitch #DonationInformation:checked ~ #BloodBankInformationPage,
+.addBloodBankSwitch #Miscellaneous:checked ~ #BloodBankInformationPage,
+.addBloodBankSwitch #UserType:checked ~ #BloodBankInformationPage {
+  display: none;
+}
+
+.addBloodBankSwitch #DonationInformationPage,
+.addBloodBankSwitch #MiscellaneousPage,
+.addBloodBankSwitch #UserTypePage {
+  display: none;
+}
+
+.addBloodBankSwitch #BloodBankInformationPage,
+.addBloodBankSwitch #DonationInformationPage,
+.addBloodBankSwitch #MiscellaneousPage,
+.addBloodBankSwitch #UserTypePage {
+  margin: 9.5px 0;
+  border-top: 1px solid rgb(226, 226, 226);
+}
+
+/*********** Blood Bank Information ***********/
+.BloodBankInformation {
+  margin: 20px 0;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 20px 0 0;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 725px) {
+  .addBloodBankSwitch > label div {
+    margin-bottom: 24.5px;
+  }
+}

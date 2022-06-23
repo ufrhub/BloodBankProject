@@ -1,0 +1,74 @@
+.DonationInformation {
+  margin: 20px 0;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 5px;
+  padding: 20px 0 0;
+}
+
+.DonationInformation_box {
+  position: relative;
+  border: 1px solid red;
+  margin: 60px 15px 100px;
+  box-shadow: rgb(109, 109, 109) 5px 5px 3px;
+}
+
+.DonationInformation_heading {
+  position: absolute;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+  left: 15px;
+  top: -25px;
+  padding: 7px 10px;
+  font-size: 23px;
+  background: white;
+}
+
+.DonationInformation_box_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DonationInformation_box_block {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.DonationInformation_box_item {
+  margin: 7.5px 10px -10px;
+  font-size: 17px;
+}
+
+.DonationInformation_box_input {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(211, 211, 211);
+  outline: none;
+  text-align: left;
+  margin: 11px 5px -10px;
+}
+
+.DonationInformation_button {
+  text-align: center;
+  margin-top: -90px;
+}
+
+.DonationInformation_button > button {
+  padding: 10px 20px;
+  margin: 20px 5px;
+  background: rgba(209, 0, 0, 0.904);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.7;
+}
+
+.DonationInformation_button > button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 970px) {
+  .DonationInformation_box_block {
+    width: 100% !important;
+  }
+}

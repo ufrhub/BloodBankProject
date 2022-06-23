@@ -1,0 +1,180 @@
+.StockAvailabilityPage {
+  margin: 30px 20px;
+}
+
+.StockAvailabilityPage .heading {
+  font-size: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  color: rgb(179, 4, 4);
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+/******* Top Section *******/
+.StockAvailabilityPage .top-section {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.top-section .form-heading {
+  width: 100%;
+  height: 50px;
+  background: rgb(189, 0, 0);
+  border: 1px solid rgb(189, 0, 0);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-heading .heading-text {
+  font-size: 1.2rem;
+  color: white;
+  padding: 12px 20px;
+}
+
+.top-section .top-section-form {
+  text-align: center;
+}
+
+.top-section-form .form {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  text-align: center;
+  display: flex;
+  border: 1px solid rgb(189, 0, 0);
+}
+
+.form div {
+  width: 25%;
+}
+
+form select {
+  font-size: 1.1rem;
+  border-radius: 5px;
+  width: 90%;
+  padding: 5px;
+  color: rgb(75, 75, 75);
+  border: 1px solid rgb(199, 199, 199);
+  outline-color: rgb(46, 255, 133);
+}
+
+.top-section .search-btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  color: white;
+  opacity: 0.7;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: red;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.top-section .search-btn:hover {
+  opacity: 1;
+}
+
+/******* Bottom Section Table Options *******/
+.StockAvailabilityPage .bottom-section {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.table-options {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+}
+
+.table-options .entry-limit {
+  margin: auto;
+  text-align: left;
+  width: 50%;
+}
+
+.table-options .search-box {
+  margin: auto;
+  text-align: right;
+  width: 50%;
+}
+
+/******* Bottom Section Table ******/
+.bottom-section .result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.result-table th {
+  background: rgb(189, 0, 0);
+}
+
+.result-table .b_bank {
+  max-width: 500px;
+}
+
+.result-table td,
+.result-table th {
+  padding: 10px 10px;
+  border: 1px solid rgb(197, 197, 197);
+  text-align: left;
+}
+
+.paginationBtn {
+  max-width: 1150px;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+
+.paginationBtn a {
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paginationBtn a:hover {
+  color: white;
+  background: black;
+}
+
+.paginationActive a {
+  color: white;
+  background: black;
+}
+
+.paginationDisabled a {
+  color: rgb(150, 150, 150);
+  background: white;
+}
+
+.paginationDisabled a:hover {
+  color: rgb(150, 150, 150);
+  background: white;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 670px) {
+  .table-options {
+    display: block;
+  }
+
+  .table-options .entry-limit {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .table-options .search-box {
+    text-align: center;
+    width: 100%;
+  }
+
+  .paginationBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

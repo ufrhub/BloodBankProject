@@ -1,0 +1,80 @@
+.AboutPage {
+  margin: 50px 20px;
+}
+
+.AboutPage .h2 {
+  color: #aa1818;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+  padding: 10px 0;
+  font-size: 1.7rem;
+  border-bottom: 1px solid rgb(233, 222, 222);
+}
+
+.AboutPage .first-box {
+  max-width: 1100px;
+  background: #f0f0f0;
+  margin: 0 auto 40px auto;
+  padding: 50px;
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+
+.AboutPage .h4 {
+  max-width: 1240px;
+  font-size: 1.1rem;
+  margin: 0 auto 20px auto;
+}
+
+.AboutPage .second-box {
+  max-width: 1250px;
+  background: #f0f0f0;
+  margin: 50px auto 40px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.second-box section {
+  padding: 20px 0;
+  width: 100%;
+  line-height: 1.8;
+}
+
+.right {
+  margin-right: 20px;
+  text-align: right;
+}
+
+.download {
+  margin-top: -5px;
+  color: red;
+}
+
+.AboutPage .h3 {
+  color: red;
+  text-decoration: underline;
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+
+.AboutPage p {
+  line-height: 2;
+  max-width: 1240px;
+  margin: 0 auto 20px auto;
+}
+
+.AboutPage .ul {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.ul li {
+  line-height: 2;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 800px) {
+  .AboutPage .second-box {
+    display: block;
+  }
+}

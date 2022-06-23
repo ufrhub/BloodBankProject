@@ -1,0 +1,121 @@
+.Fundraising {
+    background-color: rgba(74, 74, 224, 0.855);
+    padding: 50px 20px;
+}
+
+.Fundraising-heading {
+    max-width: 1200px;
+    font-size: 33px;
+    color: rgb(14, 14, 146);
+    background: rgb(183, 183, 183);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.Fundraising-body {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.Fundraising-body-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Fundraising-body-row-one {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Fundraising-donation-card {
+    width: 400px;
+    height: 560px;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin: 40px 50px;
+}
+
+.Fundraising-donation-card form {
+    max-width: 400px;
+    height: 520px;
+    background-color: rgb(199, 199, 199);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Fundraising-donation-card>form h2 {
+    color: blue;
+    font-size: 33px;
+    margin: 0 0 20px;
+}
+
+.Fundraising-donation-card>form label {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.Fundraising-donation-card>form input,
+.Fundraising-donation-card>form textarea {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Fundraising-donation-card>form button {
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: blue;
+}
+
+.Fundraising-card {
+    max-width: 300px;
+    height: 430px;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin: 40px 20px;
+}
+
+.Fundraising-card>img {
+    height: 170px;
+    max-width: 100%;
+}
+
+.Fundraising-card-heading {
+    height: 50px;
+    overflow-y: scroll;
+}
+
+.Fundraising-card-amount{
+    color: red;
+}
+
+.Fundraising-card-description {
+    height: 130px;
+    overflow-y: scroll;
+}
+
+.Fundraising-card-btn {
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    background: blue;
+    color: white;
+    margin: 10px;
+}

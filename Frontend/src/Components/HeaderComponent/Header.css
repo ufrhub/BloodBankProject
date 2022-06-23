@@ -1,0 +1,301 @@
+header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+}
+
+.Header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: white;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px 0 rgb(56, 55, 55);
+  display: flex;
+}
+
+.Logo {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0 15px 0 30px;
+}
+
+.Logo a {
+  text-decoration: none;
+  color: red;
+}
+
+/********************* Main Header *********************/
+.Header-Main-Navigation {
+  position: absolute;
+  right: 25px;
+  display: block;
+}
+
+.Navigations {
+  display: flex;
+  list-style-type: none;
+}
+
+.Navigation-Options {
+  position: relative;
+}
+
+.Navigation-Options div {
+  position: relative;
+  text-transform: uppercase;
+  padding: 14px 15px;
+  font-size: 17px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Navigation-Options .User-Profile-Name {
+  position: relative;
+  margin-left: 35px;
+}
+
+.Navigation-Options img {
+  position: absolute;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-3px);
+  border-radius: 50%;
+}
+
+.up-arrow {
+  position: absolute;
+  color: white;
+  font-size: 2.2rem;
+  top: 36px;
+  left: 44%;
+  transform: translate(0, 35%);
+  transition: all 0.25s ease-in;
+}
+
+.Navigation-Links {
+  position: absolute;
+  list-style-type: none;
+  background: white;
+  width: 220px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+.Navigation-Links a {
+  text-decoration: none;
+  color: black;
+}
+
+.Navigation-Links li {
+  font-size: 17px;
+  margin: auto;
+  margin-left: -40px;
+  padding: 10px 15px;
+  transition: all 0.2s linear;
+}
+
+.Navigation-Options:hover {
+  background: red;
+}
+
+.Navigation-Options:hover.Navigation-Options .up-arrow {
+  transform: translate(0);
+}
+
+.Navigation-Options:hover.Navigation-Options div {
+  color: white;
+}
+
+.Navigation-Options div:hover~.Navigation-Links,
+.Navigation-Links:hover {
+  display: block;
+}
+
+.Navigation-Links li:hover {
+  padding-left: 25px;
+  color: rgb(255, 0, 0);
+}
+
+/********************* Dropdown Header *********************/
+.Header-Dropdown-Navigation {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
+.Dropdown-Toggle {
+  position: absolute;
+  top: -18px;
+  right: 30px;
+  padding: 2px 12px;
+  font-size: 1.4rem;
+  border: 1px solid rgb(167, 17, 17);
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(167, 17, 17);
+}
+
+.Dropdown-Navigations {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 20px;
+  min-height: auto;
+  max-height: 400px;
+  list-style-type: none;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.Dropdown-Navigation-Options {
+  margin-top: -200px;
+  transition: all 0.5s linear;
+}
+
+.nav-head {
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 1px solid red;
+  background: white;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  padding: 4px 10px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.Dropdown-Navigation-Links {
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  transition: all 0.2s linear;
+}
+
+.Dropdown-Navigation-Links a {
+  text-decoration: none;
+  color: black;
+}
+
+.Dropdown-Navigation-Links li {
+  padding: 8px 20px;
+  background: orangered;
+  border: 1px solid rgb(150, 150, 150);
+  margin-top: -50px;
+  transition: all 0.4s linear;
+}
+
+.checkbox {
+  display: none;
+}
+
+#Header-Dropdown-Icon:checked~.Dropdown-Navigations .Dropdown-Navigation-Options {
+  margin-top: 0;
+}
+
+#about-us:checked~.one li {
+  margin-top: 0;
+}
+
+#for-blood:checked~.two li {
+  margin-top: 0;
+}
+
+#donate:checked~.three li {
+  margin-top: 0;
+}
+
+#login:checked~.four li {
+  margin-top: 0;
+}
+
+#profile:checked~.four li {
+  margin-top: 0;
+}
+
+.nav-head:hover {
+  background: red;
+  color: white;
+}
+
+.nav-head:hover .toggle-icon {
+  color: white;
+  border: 1px solid white;
+}
+
+.Dropdown-Navigation-Links li:hover {
+  padding-left: 28px;
+}
+
+.Dropdown-Navigation-Links a:hover {
+  color: whitesmoke;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 1100px) {
+  .up-arrow {
+    font-size: 2rem;
+    top: 37px;
+    left: 44%;
+  }
+
+  .Navigation-Options div {
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+
+  .Navigation-Links {
+    width: 180px;
+  }
+
+  .Navigation-Links li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 970px) {
+  .Navigation-Options div {
+    padding: 16.5px 10px;
+    font-size: 13px;
+  }
+
+  .up-arrow {
+    left: 43%;
+  }
+
+  .Navigation-Links {
+    width: 180px;
+  }
+
+  .Navigation-Links li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .Header {
+    height: 60px;
+  }
+
+  .Header-Main-Navigation {
+    display: none;
+  }
+
+  .Header-Dropdown-Navigation {
+    display: block;
+  }
+}

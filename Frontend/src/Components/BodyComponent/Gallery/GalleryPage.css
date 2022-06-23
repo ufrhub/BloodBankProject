@@ -1,0 +1,73 @@
+.GalleryPage {
+  margin: 20px 20px;
+}
+
+.GalleryPage .heading {
+  font-size: 2.5rem;
+  color: black;
+  max-width: 1200px;
+  margin: 30px auto;
+  text-align: left;
+  font-weight: 400;
+}
+
+.GalleryPage .body {
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body div {
+  position: relative;
+  width: 260px;
+  height: 240px;
+  margin: 1px;
+  background: black;
+}
+
+.body img {
+  position: absolute;
+  max-width: 260px;
+  max-height: 240px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.GalleryPage .pagination {
+  display: flex;
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.pagination .page-btn {
+    font-size: 1.2rem;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.pagination .page-btn:hover{
+    text-decoration: underline;
+}
+
+/********************* Media Queries *********************/
+@media (max-width: 1100px) {
+  .GalleryPage .body {
+    max-width: 786px;
+  }
+}
+
+@media (max-width: 850px) {
+  .GalleryPage .body {
+    max-width: 524px;
+  }
+}
+
+@media (max-width: 585px) {
+  .GalleryPage .body {
+    max-width: 260px;
+  }
+}

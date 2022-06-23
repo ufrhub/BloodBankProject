@@ -1,0 +1,23 @@
+.EraktkoshFAQPage {
+  margin: 50px 20px;
+}
+
+.EraktkoshFAQPage .box {
+  max-width: 1110px;
+  margin: 20px auto;
+}
+
+.box .question {
+  padding: 20px 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #f8cfc5;
+  background: #f8cfc5;
+}
+
+.box .answer {
+  border: 1px solid #f8cfc5;
+  padding: 20px 15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

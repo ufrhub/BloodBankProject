@@ -1,0 +1,117 @@
+.DonationRequest {
+  margin: 0 20px 50px;
+}
+
+.DonationRequest_heading {
+  text-align: center;
+  background: rgb(202, 3, 3);
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.DonationRequest_container {
+  height: 560px;
+  width: 800px;
+  margin: auto;
+  background-color: white;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.541);
+}
+
+.DonationRequest_container_heading {
+  font-size: 20px;
+  color: rgb(202, 3, 3);
+  padding: 15px;
+  border-bottom: 1px solid rgb(214, 214, 214);
+  margin-bottom: 20px;
+}
+
+.DonationRequest_container_form {
+  background: rgb(235, 235, 235);
+  height: 80%;
+  width: 96%;
+  margin: auto;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+}
+
+.DonationRequest_container_form .row {
+  display: flex;
+}
+
+.DonationRequest_container_form_input div {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.DonationRequest_container_form_input input,
+.DonationRequest_container_form_input select {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 18px;
+  color: rgb(100, 100, 100);
+}
+
+.DonationRequest_container_form button {
+  background: rgb(202, 3, 3);
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 236px;
+  display: block;
+  margin: 20px auto;
+  opacity: 0.6;
+}
+
+.DonationRequest_container_form button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 850px) {
+  .DonationRequest_container {
+    max-height: 1200px;
+    min-height: 1100px;
+    height: auto;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .DonationRequest_container_form {
+    height: max-content;
+    margin-bottom: 30px;
+  }
+
+  .DonationRequest_container_form .row {
+    display: block;
+  }
+
+  .DonationRequest_container_form_input input {
+    width: 97.8% !important;
+  }
+
+  .DonationRequest_container_form_input select {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .DonationRequest_container {
+    max-width: 450px;
+  }
+
+  .DonationRequest_container_form {
+    height: 90%;
+  }
+
+  .DonationRequest_container_form_input input {
+    width: 96.3% !important;
+  }
+}
